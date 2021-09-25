@@ -1,0 +1,160 @@
+body {
+    padding: 0;
+}
+
+button {
+    padding: 14px;
+    outline: none;
+    border: none;
+}
+
+body, button {
+    font-family: 'Red Hat Display','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+    color: #7280A7;
+}
+
+.container {
+    background-image: url(./images/pattern-background-desktop.svg);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    background: rgba(224, 232, 255, .8);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.card {
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-width: 360px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px 5px rgba(56, 41, 224, 0.1);
+}
+
+.cover-image {
+    background-image: url(./images/illustration-hero.svg);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content {
+    padding: 0 30px 10px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: rgb(31, 47, 86);
+}
+
+.description {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 30px;
+    line-height: 1.4rem;
+}
+
+.section-price {
+    background-color: #F5F7FF;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.price-container {
+    display: flex;
+}
+
+.price-content {
+    margin-left: 12px;
+}
+
+.price-title {
+    color: rgb(31, 47, 86);
+    margin: 0;
+}
+
+.price-value {
+    margin: 0;
+    margin-top: 6px;
+}
+
+.btn-change {
+    background: none;
+    font-size: 12px;
+    color: #3829E0;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.btn-change:focus, .btn-change:active  {
+    color:rgba(56, 41, 224, 0.8);
+    text-decoration: none;
+}
+
+.btn-process {
+    background: #3829E0;
+    color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 700;
+    box-shadow: 0px 8px 15px 0px rgba(56, 41, 224, 0.25);
+}
+
+.btn-process:focus, .btn-process:active  {
+    background:rgba(56, 41, 224, 0.8);
+}
+
+.btn-cancel {
+    color: #7280A7;
+    background: none;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.btn-cancel:focus, .btn-cancel:active  {
+    color: rgb(31, 47, 86);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+
+    .title {
+        margin-top: 0;
+    }
+
+    .description {
+        padding: 0 10px;
+    }
+}
